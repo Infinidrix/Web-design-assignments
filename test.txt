@@ -1,3 +1,4 @@
 this is a new file modified by will of all
 this is the third change
 this is a long long change
+this is the last change
