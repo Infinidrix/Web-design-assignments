@@ -1,9 +1,0 @@
-this is a new file modified by will of all
-this is the third change
-this is a long long change
-<<<<<<< HEAD
-this is the last change
-DIfferent
-=======
->>>>>>> parent of fc91d74... Final Commit
-hi
