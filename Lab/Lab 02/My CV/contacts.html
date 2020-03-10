@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="https://img.icons8.com/nolan/2x/reading.png" type="image/x-icon">
+        <title>Contact Us</title>
+    </head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <hr>
+        <p align = "center"><a href="index.html">Home</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="contacts.html">Contact us</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="gallery.html">Gallery</a>
+      </p>
+      <hr>
+    </header>
+    <table>
+        <tr>
+            <td><main>
+                <form action="">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class='firstName' id="firstName" pattern="^[A-Z]{1}[a-z]+$">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" pattern="^[A-Z]{1}[a-z]+$"><br><br>
+                    <label for="Email">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="email" name="Email" id="Email">
+                    <label for="Gender">Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <select name="Gender" id="engender">
+                        <option value="male">Male</option>
+                        <option value="Dunno">Don't Know</option>
+                        <option value="female">Female</option>
+                    </select><br><br>
+                    <textarea name="comment" id="commentsection" cols="40" rows="10" placeholder = "Write your comment here..."></textarea><br>
+                    <br>
+                    <label for="Telephone">Phone Number</label><input type="tel" name="Telephone" id="phoneNo">
+                    <br><br>
+                    <label for="Password">Password</label>
+                    <input type="password" name="Password" id="password_field" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </main></td>
+            <td><h2>Our Location</h2>
+                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Addis%20ababa%20Institute%20of%20technology&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </td>
+        </tr>
+    </table>
+    
+    <hr>
+    <footer>
+        <p>Developed by Biruk Solomon</p>
+        <table>
+            <tr>
+                <td><a href="mailto:se.biruk.solomon@gmail.com" target="_blank" rel="noopener noreferrer">se.biruk.solomon@gmail.com</a></td>
+                <td>&nbsp;&nbsp;|&nbsp;&nbsp;</td>
+                <td><a href="https://www.linkedin.com/in/biruksolomon/">LinkedIn</a> </td>
+                <td>&nbsp;&nbsp;|&nbsp;&nbsp;</td>
+                <td><a href="https://t.me/Biruk_S">@Biruk_S</a></td>
+            </tr>
+        </table>
+    </footer>
+
+</body>
+</html>
