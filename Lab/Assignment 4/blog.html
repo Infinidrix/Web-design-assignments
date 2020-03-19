@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        /* h1{
+            color: aquamarine;
+        } */
+    </style>
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+</head>
+<body>
+
+    <header><nav><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul></nav></header>
+
+    <div id="content">
+        <section>
+            <p class="title">use of relative sizes</p>
+            <article>
+                <p>When it comes to the design of responive websites, there are a few things to consider namely, screen size and zoom.</p>
+                <p>Firstly lets cover zoom. When we use px sizes to determine the font size of the content, we remove the ability of the end-user to set the size as they want. <br> Here it is important to note that the zoom feature is explicitly turned up or down by the action of the user. This means that if the zoom feature is enabled, it is because the user wants it so. By using relative sized like rem and em we allow for the user to select a font size that works best with their style. So
+                with this in mind, it is obvious that relative sizes are the winner when it comes to flexibility with the zoom feature.</p>
+                <p>When we come over to screen sizes, it becomes a <a href = "https://engageinteractive.co.uk/blog/em-vs-rem-vs-px">little tricky</a>. We typically use <code>@media</code> queries to adapt the website to different screen sizes. In <code>@media</code> queries using em is more preferrable to rem because we would alter indivital content differently for different screen sizes. So this causes a preference among relative sizes. Moreover, This <a href = "https://zellwk.com/blog/media-query-units/">blog post</a>  highlights some of the key the differences
+                between using pixels, EMs and REMs in media queries. <br>
+In summary, both pixels and REMs for media queries fail in various browsers when using browser zoom, and EMs are the best option we have. REMs fail much more than pixels at this point, so we’re going to discount them completely.
+It does get a bit more tricky though. Both EMs and pixels have their downfalls with media queries when it comes to the difference of a decimal place of that unit. If you happen to use both min and max width media queries in the same block of code, you’re going to have a bad time as soon as the user starts to change their browser zoom or default font-size.
+
+            </article>
+            <p class="date">March 19, 2020: 02:45 PM</p>
+        </section>
+        <section>
+            <p class="title">A word on brower width and font sizes </p>
+            <article>
+                <p>I think the first step to understanding how that is resolved is to see how relative sizes, specifically rem, works.</p>
+                <p>Simply put, rem is measuring the font size of a textual content relative to the root's font-size. For example if we set the root element's (HTML's) font-size to be 10px then 1.6 rem would be 16px. This approach really helps if we want to scale down the entire project, we would only change one value and the entire content will be shrinked proportionally.</p>
+                <p>With this in mind when we don't explicitly declare the font-size of HTML the browser's <a href="https://www.w3schools.com/css/css_font.asp">default</a> which is 16px is applied. What this means is 1 rem is equal to 16 px. This value doesn't refer to the width of the HTML at all. Instead it just sets a default reference for all rem values if you didn't happen to specify the HTML font-size property</p>
+
+            </article>
+            <p class="date">March 19, 2020: 02:55 PM</p>
+        </section>
+        <section>
+            <p class="title">CSS3 changes</p>
+            <article>
+                <p>The changes in CSS3 are various and very long to list out> Regardless, that is what I will be doing in this blog post. To best cover the entireity of these changes. I will list them out.</p>
+                <ul>
+                    <li>Selectors</li>
+                    <li>Box Model</li>
+                    <li>Backgrounds and Borders</li>
+                    <li>Image Values and Replaced Content</li>
+                    <li>Text Effects</li>
+                    <li>2D/3D Transformations</li>
+                    <li>Animations</li>
+                    <li>Multiple Column Layout</li>
+                    <li>User Interface</li>
+                </ul>
+                <h2>Backgrounds and Borders</h2>
+                <h5>Rounded Corners</h5>
+                <p>We can now use the border-radius property to create round</p>
+                <h5></h5>
+                <p>We now have the option to set border images using border-image property</p>
+                <h5>Background options</h5>
+                <p>We now have new CSS3 properties like background-size, background-origin and background-clip in addition we can also have multiple backgrounds,each with its own size <br> 
+                    <h6>
+                        CSS3 background-origin Property
+                    </h6>
+
+                    The CSS3 background-origin property specifies where the background image is positioned.
+                    
+                    The property takes three different values:
+                    
+                        border-box - the background image starts from the upper left corner of the border
+                        padding-box - (default) the background image starts from the upper left corner of the padding edge
+                        content-box - the background image starts from the upper left corner of the content
+                    <br>
+                    <h6>
+                        CSS3 background-clip Property
+                    </h6>
+
+The CSS3 background-clip property specifies the painting area of the background.
+
+The property takes three different values:
+
+    border-box - (default) the background is painted to the outside edge of the border
+    padding-box - the background is painted to the outside edge of the padding
+    content-box - the background is painted within the content box
+
+The following example illustrates the background-clip property:
+                </p>
+                <h2>Colors</h2>
+                <h5>RGBA, HSL, HSLA Colors</h5>
+                <p>RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.
+
+                    An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque). <br>
+                    HSL stands for Hue, Saturation and Lightness.
+
+An HSL color value is specified with: hsl(hue, saturation, lightness).
+
+    Hue is a degree on the color wheel (from 0 to 360):
+        0 (or 360) is red
+        120 is green
+        240 is blue
+    Saturation is a percentage value: 100% is the full color.
+    Lightness is also a percentage; 0% is dark (black) and 100% is white.
+<br>
+HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.
+
+An HSLA color value is specified with: hsla(hue, saturation, lightness, alpha), where the alpha parameter defines the opacity. The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque). <br>
+                </p>
+                <h2>Gradients</h2>
+                <h5>Linear Gradients</h5>
+                <p>To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.
+                    Syntax
+                    background: linear-gradient(direction, color-stop1, color-stop2, ...);
+                    
+                    Linear Gradient default is Top to Bottom</p>
+                <h5>Radial Gradients</h5>
+                <p>A radial gradient is defined by its center.
+
+                    To create a radial gradient you must also define at least two color stops.
+                    Syntax
+                    background: radial-gradient(shape size at position, start-color, ..., last-color);
+                    
+                    By default, shape is ellipse, size is farthest-corner, and position is center.</p>
+                <h2>Shadow Effects</h2>
+                <h5>Text Shadow</h5>
+                <p>CSS3 Text Shadow
+
+                    The CSS3 text-shadow property applies shadow to text.
+                    
+                    In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px).</p>
+                <h5>Box Shadow</h5>
+                <p>The CSS3 box-shadow property applies shadow to elements.
+
+                    In its simplest use, you only specify the horizontal shadow and the vertical shadow. Next, add a color to the shadow. Next, add a blur effect to the shadow. You can also add shadows to the ::before and ::after pseudo-classes, to create an interesting effect.
+                </p>
+                <h2>Text</h2>
+                <h5>Text Overflow</h5>
+                <p>The CSS3 text-overflow property specifies how overflowed content that is not displayed should be signaled to the user.
+
+                    It can be clipped:
+                    
+                    This is some long text that will not fit in the box
+                    
+                    or it can be rendered as an ellipsis (...):
+                    
+                    This is some long text that will not fit in th...
+                    This is done using 	text-overflow: ellipsis;
+                </p>
+                <h5>Word Wrap</h5>
+                <p>The CSS3 word-wrap property allows long words to be able to be broken and wrap onto the next line. 
+
+                    If a word is too long to fit within an area, it expands outside:
+                    
+                    This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.
+                    
+                    The word-wrap property allows you to force the text to wrap - even if it means splitting it in the middle of a word:
+                    
+                    This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.
+                    
+                    The CSS code is as follows: word-wrap: break-word;</p>
+                <h5>Word Breaking</h5>
+                <p>CSS3 Word Breaking
+
+                    The CSS3 word-break property specifies line breaking rules.
+                    
+                    This paragraph contains some text. This line will-break-at-hyphens.
+                    
+                    This paragraph contains some text. The lines will break at any character.
+                    
+                    The CSS code is as follows: word-break : break-all;</p>
+                <h2>Flexboxs</h2>
+                <p>CSS3 Flexbox
+
+                    Flexible boxes, or flexbox, is a new layout mode in CSS3.
+                    
+                    Use of flexbox ensures that elements behave predictably when the page layout must accommodate different screen sizes and different display devices.
+                    
+                    For many applications, the flexible box model provides an improvement over the block model in that it does not use floats, nor do the flex container's margins collapse with the margins of its contents.
+                    Browser Support
+                    
+                    The numbers in the table specify the first browser version that fully supports the feature.
+                    
+                    Numbers followed by -webkit- or -moz- specify the first version that worked with a prefix.
+                    Property 						
+                </p>
+                    
+                    <h5>
+                        CSS3 Flexbox Concepts
+                    </h5>
+                    <p>
+                    Flexbox consists of flex containers and flex items.
+                    
+                    A flex container is declared by setting the display property of an element to either flex (rendered as a block) or inline-flex (rendered as inline).
+                    
+                    Inside a flex container there is one or more flex items.
+                    
+                    Note: Everything outside a flex container and inside a flex item is rendered as usual. Flexbox defines how flex items are laid out inside a flex container.
+                    
+                    Flex items are positioned inside a flex container along a flex line. By default there is only one flex line per flex container.</p>
+              
+
+            </article>
+            <p class="date">March 19, 2020: 04:12 PM</p>
+        </section>
+        
+
+
+    </div>
+</body>
+</html>
