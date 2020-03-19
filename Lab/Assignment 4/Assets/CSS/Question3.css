@@ -1,0 +1,224 @@
+div.top{
+    position: relative;
+    float: left;
+    display: block;
+    width: 100px;
+    height: 60px;
+    margin-inline-end: 40px;
+    border: 1px solid black;
+}
+div.german{
+    width: 100%;
+    height: 33%;
+}
+span{
+    visibility: hidden;
+    width: 120%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    z-index: 1;
+}
+div.top#german:hover span.german#tooltip{
+    visibility: visible;
+}
+div.top#japan:hover span.japan#tooltip{
+    visibility: visible;
+}
+div.top#nigeria:hover span.nigeria#tooltip{
+    visibility: visible;
+}
+div.top#yemen:hover span.yemen#tooltip{
+    visibility: visible;
+}
+div.top#netherlands:hover span.netherlands#tooltip{
+    visibility: visible;
+}
+div.top#poland:hover span.poland#tooltip{
+    visibility: visible;
+}
+div.top#ukraine:hover span.ukraine#tooltip{
+    visibility: visible;
+}
+div.top#indonesia:hover span.indonesia#tooltip{
+    visibility: visible;
+}
+div.top#peru:hover span.peru#tooltip{
+    visibility: visible;
+}
+div.top#bangladesh:hover span.bangladesh#tooltip{
+    visibility: visible;
+}
+div.top#bulgaria:hover span.bulgaria#tooltip{
+    visibility: visible;
+}
+div.top#niger:hover span.niger#tooltip{
+    visibility: visible;
+}
+div.german#top{
+    background-color: black;
+}
+div.german#mid{
+    background-color: red;
+}
+div.german#low{
+    background-color: yellow;
+}
+
+div.japan#bg{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+div.japan#cir{
+    background-color: red;
+    width: 38%;
+    height: 50%;
+    position: relative;
+    bottom: 75%;
+    left: 31%;
+    border-radius: 50%;
+    z-index: 1;
+}
+div.nigeria{
+    height: 100%;
+    width: 30.1%;
+    display: inline-block;
+    margin: 0;
+}
+div.nigeria#side{
+    background-color: green;
+}
+div.nigeria#mid{
+    background-color: white;
+}
+div.yemen{
+    width: 100%;
+    height: 33%;
+}
+div.yemen#top{
+    background-color: red;
+}
+div.yemen#mid{
+    background-color: white;
+}
+div.yemen#low{
+    background-color: black;
+    height: 34%;
+}
+div.netherlands{
+    width: 100%;
+    height: 33%;
+}
+div.netherlands#top{
+    background-color: red;
+}
+div.netherlands#mid{
+    background-color: white;
+}
+div.netherlands#low{
+    height: 34%;
+    background-color: blue;
+}
+div.poland{
+    width: 100%;
+    height: 50%;
+}
+div.poland#top{
+    background-color: white;
+}
+div.poland#low{
+    background-color: red;
+}
+div.ukraine{
+    width: 100%;
+    height: 50%;
+}
+div.ukraine#top{
+    background-color: blue;
+}
+div.ukraine#low{
+    background-color: yellow;
+}
+div.indonesia{
+    width: 100%;
+    height: 50%;
+}
+div.indonesia#low{
+    background-color: white;
+}
+div.indonesia#top{
+    background-color: red;
+}
+
+div.peru{
+    height: 100%;
+    width: 30.1%;
+    display: inline-block;
+    margin: 0;
+}
+div.peru#side{
+    background-color: red;
+}
+div.peru#mid{
+    background-color: white;
+}
+div.bangladesh#bg{
+    background-color: green;
+    width: 100%;
+    height: 100%;
+}
+div.bangladesh#cir{
+    background-color: red;
+    width: 38%;
+    height: 50%;
+    position: relative;
+    bottom: 75%;
+    left: 31%;
+    border-radius: 50%;
+    z-index: 1;
+}
+div.bulgaria{
+    width: 100%;
+    height: 33%;
+}
+div.bulgaria#top{
+    background-color: white;
+}
+div.bulgaria#mid{
+    background-color: green;
+}
+div.bulgaria#low{
+    height: 34%;
+    background-color: red;
+}
+div.niger{
+    width: 100%;
+    height: 33%;
+}
+div.niger#top{
+    background-color: orange;
+}
+div.niger#mid{
+    background-color: white;
+}
+div.niger#low{
+    height: 34%;
+    background-color: green;
+}
+div.niger#cir{
+    background-color: orange;
+    width: 21%;
+    height: 33%;
+    position: relative;
+    bottom: 67%;
+    left: 41%;
+    border-radius: 50%;
+    z-index: 1;
+}
