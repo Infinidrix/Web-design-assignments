@@ -3,37 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Question 2 Assignment 4</title>
-    <link rel="stylesheet" href="Assets/CSS/Question2.css">
+    <title>TicTacToe</title>
+    <style>
+        div{
+            float: left;
+            width: 33%;
+            height: 123px;
+            border: 1px solid black;
+        }
+        .container{
+            border: none;
+            float: none;
+            display: block;
+            width: 50%;
+            height: 372px;
+            margin: auto;
+        }
+        .top{
+            border-top: none;
+        }
+        .low{
+            border-bottom: none;
+        }
+        .right{
+            border-right: none;
+        }
+        .left{
+            border-left: none;
+        }
+    </style>
 </head>
 <body>
-    <div class="top">
-        <div class="german" id="top"></div>
-        <div class="german" id="mid"></div>
-        <div class="german" id="low"></div>
-    </div>
-    <div class="top">
-            <div class="japan" id="bg"></div>
-            <div class="japan" id="cir"></div>
-    </div>
-    <div class="top">
-        <div class="nigeria" id="side"></div>
-        <div class="nigeria" id="mid"></div>
-        <div class="nigeria" id="side"></div>
-    </div>
-    <div class="top">
-        <div class="yemen" id="top"></div>
-        <div class="yemen" id="mid"></div>
-        <div class="yemen" id="low"></div>
-    </div>
-    <div class="top">
-        <div class="netherlands" id="top"></div>
-        <div class="netherlands" id="mid"></div>
-        <div class="netherlands" id="low"></div>
-    </div>
-    <div class="top">
-        <div class="poland" id="top"></div>
-        <div class="poland" id="low"></div>
+    <div class="container">
+        <div class="top left"></div>
+        <div class="top center"></div>
+        <div class="top right"></div>
+        <div class="mid left"></div>
+        <div class="mid center"></div>
+        <div class="mid right"></div>
+        <div class="low left"></div>
+        <div class="low center"></div>
+        <div class="low right"></div>
     </div>
 </body>
 </html>
