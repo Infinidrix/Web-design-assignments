@@ -20,6 +20,8 @@ header{
     z-index: 1;
 }
 #content{
+    display: flex;
+    flex-direction: column;
     margin-top: 100px;
 }
 nav li a:link{
@@ -43,6 +45,7 @@ nav li a:visited{
 
 
 section{
+    flex: auto;
     position: relative;
     background-color: white;
     border: 9px solid lightblue;
