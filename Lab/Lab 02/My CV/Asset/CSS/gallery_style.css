@@ -1,18 +1,17 @@
-/* .row{
-    width: 90%;
-    margin: auto;
-} */
 body{
     font-family: monospace;
     font-size: 20px;
     font-style: normal;
 }
 figure{
-    padding: auto;
+    float: left;
     width: 30%;
-    display: inline-block;
-    margin-left: 0;
+    margin: 1%;
 
+}
+.content{
+    display: flex;
+    flex-direction: column;
 }
 .title{
     text-transform: uppercase;
@@ -23,6 +22,12 @@ figure{
 .title_desc{
     display: none;
 }
+.row{
+    flex: auto;
+    height: auto;
+    overflow-y: ;
+}
+
 .row, .title{
     padding-bottom: 15px;
     border-bottom: 2px dashed black;
@@ -31,4 +36,17 @@ img{
     font-family: sans-serif;
     font-size: 21px;
     font-style: italic;
+    height: 400px;
+    margin: auto;
+}
+@media screen and (max-width: 100px){
+    figure{
+        width:
+    }
+}
+@media screen and (max-width: 700px){
+    figure{
+        width:100%;
+    }
+
 }
