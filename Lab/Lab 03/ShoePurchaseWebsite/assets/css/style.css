@@ -1,1 +1,10 @@
 /* TODO: add fonts */
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+#title{
+    font-family: 'Potta One', cursive;
+}
+
+.font-bold{
+    font-weight: 500;
+}
